@@ -1,0 +1,101 @@
+.container {
+    width:100%;
+    box-sizing: border-box;
+}
+.header {
+    border-bottom: 2px solid black;
+}
+h4, h2 {
+    font-family: Merienda;
+    text-align: center;
+}
+h3,.work p:nth-child(1) ,.opensource p:nth-child(1) {
+    font-family: Merienda;
+}
+.aside {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title {
+    text-align:  center;
+}
+.projects, .work, .opensource,.education{
+    border:1px solid black;
+    margin:0;
+}
+.projects h4{
+    text-align: center;
+}
+.projects p {
+    padding-left: 20px;
+    border-bottom:1px solid black;
+}
+.projects p:nth-last-child(1) {
+    border:none;
+}
+.work p, .opensource p, .education p {
+    padding-left: 20px;
+}
+.work a, .opensource a{
+    padding-left:20px;
+    text-decoration: none;
+    color:blue;
+}
+
+.prof-review {
+    border:1px solid black;
+    border-radius:5px;
+    margin:0 30px;
+}
+.name {
+    color:gray;
+}
+footer {
+    text-align: center;
+}
+
+@media (max-width: 748px) {
+    .header {
+        border:none;
+        margin-bottom:15px;
+    }
+    .aside {
+        flex-direction:column;
+    }
+    .projects p  {
+        background-color:rgb(122, 176, 177);
+        margin:0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .work, .opensource{
+        padding:0;
+        margin:0;
+        background-color: rgb(122, 176, 177);
+    }
+    .work h4{
+        background-color: white;
+        margin:0;
+        padding:0;
+        border-bottom: 1px solid black;
+    }
+    .opensource h4 {
+        text-align:left;
+    }
+    .education {
+        padding:0;
+    }
+    .second-main {
+        margin-top:20px;
+    }
+    .prof-review {
+        width: 90%;
+    }
+    .prof-review:nth-child(2), .prof-review:nth-child(1) {
+        display:none;
+    }
+    .footer{
+        text-align: center;
+    }
+}
